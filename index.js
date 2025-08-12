@@ -3,7 +3,10 @@ import cors from "cors";
 import puppeteer from "puppeteer";
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: "https://tweet2pic.vercel.app"  // frontend ki exact URL yahan daalo
+}));
 app.use(express.json());
 
 app.post("/generate", async (req, res) => {
