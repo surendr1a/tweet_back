@@ -25,7 +25,7 @@ app.post("/generate", async (req, res) => {
     const browser = await puppeteer.launch({
       headless: "new",
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      // executablePath: '/usr/bin/google-chrome-stable'  // Render ke liye Chrome path
+      // executablePath: '/usr/bin/google-chrome-stablee'  // Render ke liye Chrome path
     });
 
     console.log("🌐 Opening new page...");
